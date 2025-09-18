@@ -1,1 +1,1 @@
-gunicorn phishing_detect.wsgi:application --bind 0.0.0.0:$PORT --timeout 120
+web: gunicorn phishing_detect.wsgi --log-file -
