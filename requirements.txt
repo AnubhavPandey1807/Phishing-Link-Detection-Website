@@ -1,41 +1,29 @@
-# Web framework
 Django==5.1.3
 djangorestframework==3.15.2
 django-cors-headers==4.7.0
 django-autoslug==1.9.9
 django-tinymce==4.1.0
-whitenoise==6.10.0
+
 gunicorn==23.0.0
 
-# Data & ML
-numpy==2.1.3
+numpy==2.2.0
 pandas==2.2.3
-scikit-learn==1.5.2
-scipy==1.14.1
+scipy==1.16.2
+scikit-learn==1.7.2
+joblib==1.5.0
+matplotlib==3.9.3
 seaborn==0.13.2
-matplotlib==3.9.2
-opencv-python==4.10.0.84
+opencv-python==4.11.0.86
 
-# Google / API clients
-google-api-python-client==2.155.0
-google-auth==2.37.0
-google-auth-httplib2==0.2.0
-google-generativeai==0.8.3
-google-ai-generativelanguage==0.6.10
-grpcio==1.68.1
-grpcio-status==1.68.1
-protobuf==5.29.1
-
-# Utilities
+tldextract==5.3.0
 requests==2.32.3
-tqdm==4.67.1
 python-dotenv==1.0.1
-PyYAML==6.0.2
-sqlparse==0.5.2
 
-# Security
 argon2-cffi==23.1.0
-cryptography>=41.0.7
+cffi==1.17.1
 
-# Platform-specific (only install on Windows)
-pywinpty==2.0.14; sys_platform == "win32"
+# Optional, for logging & JSON handling
+python-json-logger==2.0.7
+
+# Optional, for serving static files
+whitenoise==6.10.0
