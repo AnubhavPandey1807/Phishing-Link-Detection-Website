@@ -34,7 +34,6 @@ def result(request):
                 verdict = "Safe ✅"
                 color = "green"
         else:
-            # fallback if probability not available
             verdict = "Phishing ❌" if prediction == 1 else "Safe ✅"
             color = "red" if prediction == 1 else "green"
 
@@ -44,5 +43,7 @@ def result(request):
             "color": color,
             "confidence": confidence,
         }
-
         return render(request, "detector/result.html", context)
+
+    # ✅ handle GET request gracefully
+    return render(request, "detector/result.html", {"url": None, "verdict": None})
