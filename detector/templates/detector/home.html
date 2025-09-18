@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detector</title>
+</head>
+<body>
+    <h2>🔍 Phishing Link Detection</h2>
+    <form method="post" action="{% url 'result' %}">
+        {% csrf_token %}
+        <input type="text" name="url" placeholder="Enter URL here" required>
+        <button type="submit">Check</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Result</title>
+</head>
+<body>
+    <h2>Result for: {{ url }}</h2>
+    <p>
+    <strong>Verdict:</strong>
+    <span style="color: {{ color }}; font-weight: bold;">
+        {{ verdict }}
+    </span>
+</p>
+
+{% if confidence %}
+<p><strong>Confidence:</strong> {{ confidence }}%</p>
+{% endif %}
+    <h3>{{ verdict }}</h3>
+    <a href="{% url 'home' %}">Check another</a>
+</body>
+</html>
