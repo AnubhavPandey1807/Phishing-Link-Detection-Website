@@ -1,1 +1,4 @@
+*.py linguist-detectable
+*.django linguist-detectable
 *.js linguist-vendored
+*.css linguist-vendored
